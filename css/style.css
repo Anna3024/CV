@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#contacts, .portfSkill>ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 7px;
+}
+body {
+    background-color: #e8e8e8; 
+    padding-top: 50px; 
+}
+header, .portfSkill>ul {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f2f2f2;
+    width: 800px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px 2px #868892;
+}
+#social {
+    display: flex;
+}
+#social>li {
+    margin-right: 10px;
+}
+.educationExp>ul {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.educationExp>ul>li {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    width: 45%;
+    box-shadow: 0 0 5px 2px #868892;
+    margin-top: 20px;
+    position: relative;
+}
+header>h1>span {
+    color: black;
+}
+header>h1 {
+    text-align: left;
+}
+h1 {
+    color: #1887c0;
+    text-align: center;
+}   
+h3, li>span {
+    color: #868892;   
+}
+#avatar {
+    width: 200px;
+    float: left;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+#contacts>li {
+    width: 49%;
+    margin-top: 10px;
+}
+header>div {
+    margin-top: 20px;
+}
+.portfSkill,  .educationExp {
+    margin-top: 50px;
+}
+.portfSkill>ul {
+    padding-left: 20px;
+    vertical-align: middle;
+    flex-direction: column;
+    font-size: 19px;
+}
+.portfSkill>ul {    
+    list-style-type: decimal;
+    height: 100px;
+}
+.portfSkill>ul>li {
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.year {
+    width: 30%;
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    background-color: #1389c9;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;    
+    box-shadow: 0.4em 0.4em 5px #868892;
+}
+.year+h3 {
+    padding-top: 50px;
+    color: black;
+}
+footer {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
