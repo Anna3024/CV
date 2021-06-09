@@ -1,0 +1,209 @@
+@mixin small ($w) {
+    @media all and (max-width: $w) {
+        @content;
+    };
+};
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: #1389c9;
+}
+p {
+    text-align:  justify ;
+}
+#contacts, .portfSkill>ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 7px;
+}
+#contacts>li {
+    width: 49%;
+    margin-top: 10px;
+}
+@include small (720px) {
+    #contacts {
+        display: inline;
+        li {
+            width: auto;
+            margin-top: 5px;
+            margin-left: 7px;
+        }
+    }
+}
+@include small (669px) {
+    #contacts {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+body {
+    background-color: #e8e8e8; 
+    padding-top: 50px; 
+    @include small (430px) {
+        padding-top: 10px; 
+    }
+}
+header, .portfSkill>ul {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f2f2f2;
+    width: 800px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px 2px #868892;
+    @include small (835px) {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@include small (741px) {
+    #links {
+        display: flex;
+        h3 {
+            line-height: 35px;
+        }
+    }
+}
+#social {
+    display: flex;
+    
+}
+#social>li {
+    margin-right: 10px;
+}
+.educationExp>ul {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include small (835px) {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: block;
+    }
+}
+.educationExp>ul>li {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    width: 45%;
+    box-shadow: 0 0 5px 2px #868892;
+    margin-top: 20px;
+    position: relative;
+    @include small (835px) {
+        width: auto;
+    }
+}
+header>h1>span {
+    color: black;
+}
+header>h1 {
+    text-align: left;
+}
+h2 {
+    color: #1887c0;
+    text-align: center;
+}   
+h3, li>span {
+    color: #868892;   
+}
+#avatar {
+    width: 230px;
+    float: left;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 20px;
+    @include small (670px) {
+        width: 180px;
+        margin-top: 0px;
+    }
+    @include small (620px) {
+        width: 150px;
+    }
+    @include small (390px) {
+        display: none;
+    }
+}
+
+header>div {
+    margin-top: 20px;
+    @include small (650px) {
+        margin-top: 0px;
+    }
+}
+.portfSkill,  .educationExp {
+    margin-top: 50px;
+}
+.portfSkill>ul {
+    padding-left: 20px;
+    vertical-align: middle;
+    flex-direction: column;
+    font-size: 19px;
+    @include small (430px) {
+        display: block;
+    }
+}
+.portfSkill>ul {    
+    list-style-type: decimal;
+    height: 120px;
+    
+}
+@include small (620px) {
+    .portfSkill:first-of-type>ul {
+        height: 180px;
+    }
+}
+@include small (430px) {
+    .portfSkill:first-of-type>ul, .portfSkill>ul {
+    height: auto;
+}
+}
+.portfSkill>ul>li {
+    margin-left: 50px;
+    margin-top: 5px;
+    @include small (620px) {
+        margin-left: 10px;
+    }
+}
+.year {
+    width: 30%;
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    background-color: #1389c9;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;    
+    box-shadow: 0.4em 0.4em 5px #868892;
+    @include small (370px) {
+        width: 100px;
+    }
+}
+.year+h3 {
+    padding-top: 50px;
+    color: black;
+}
+footer {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 50px;
+    @include small (430px) {
+        margin-top: 20px;
+    }
+}
